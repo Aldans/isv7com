@@ -1,0 +1,126 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+    /* // img-content-start */
+
+    .img-content-md-show
+        display: none
+
+    /* // img-content-end */
+
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+    /* // img-content-start */
+
+   
+    /* // img-content-end */
+
+    /* present block start */
+    .wrap-present
+        .block-present
+            h2
+                font-size: 40px
+        .block-free
+            h2
+                font-size: 40px
+        .block-hosting
+            h2
+                font-size: 40px
+    /* present block end */
+
+
+
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+
+    /* // img-content-start */
+
+    .wrap-img-content-center
+        order: -1
+    .wrap-img-content
+        text-align: center
+    .wrap-img-content-right,
+    .wrap-img-content-left
+        display: none
+    .img-content-md-show
+        margin-top: 60px
+        display: block !important
+
+    /* // img-content-end */
+
+    /* tariffs-item start*/
+    .tariffs-item-img-box
+        display: none
+
+    .tariffs-item-img-box-show
+        margin-top: 20px
+        display: block
+    /* tariffs-item end*/
+
+    /* present block start */
+    .wrap-present
+        margin-top: 20px
+        .block-present
+            h2
+                text-align: center
+                position: relative
+                font-size: 30px
+                top: 0
+                left: 0
+        .block-free
+            h2
+                text-align: center
+                position: relative
+                top: 0
+                left: 0
+                font-size: 30px
+                transform: rotate(0deg)
+        .block-hosting
+            h2
+                text-align: center
+                position: relative
+                top: 0
+                left: 0
+                font-size: 30px
+    .wrap-tariffs-item
+        margin-top: 50px
+    /* present block end */
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+    .wrap-img-content-center
+        img
+            width: 300px
+
+
+//Extra small: >0
++media-breakpoint-down(xs)
+
+    
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
